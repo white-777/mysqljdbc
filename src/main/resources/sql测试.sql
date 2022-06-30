@@ -14,14 +14,24 @@ create table tb1(
     age varchar(2)
 ) engine=innodb charset=utf8;
 drop table if exists user;
-create table user
-(
-    id   int,
+create table user(
+    id   int primary key ,
     name varchar(100)
 );
-insert into user values(1,'张三'),
-                       (2,'1');
+
+show create table user;
     truncate table user;
 insert into user values(),
                         ();
 update user set id = 1 where name = '';
+
+create table tb3(
+    id int primary key auto_increment,
+    name varchar(200)
+
+);
+insert into tb3 value (1,'2');
+insert into tb3 value (2,'2');
+select last_insert_id();
+
+delete from tb3;
