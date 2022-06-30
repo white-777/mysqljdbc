@@ -6,6 +6,7 @@ create database db2 charset utf8;
 alter database db2 charset utf8mb4;
 drop database if exists db2;
 --
+select * from tb3;
 -- 表管理
 create database db2 charset utf8mb4;
 use db2;
